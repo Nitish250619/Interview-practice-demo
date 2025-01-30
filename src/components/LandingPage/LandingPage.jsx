@@ -2,7 +2,8 @@ import React from "react";
 import HeroSection from "../HeroSection/HeroSection";
 import TopicsOverview from "../TopicsOverview/TopicsOverview";
 import TestSection from "../TestSection/TestSection";
-import ResourcesSection from "../ResourcesSection/ResourcesSection";
+import MachineCodingRound from "../MachineCodingRound/MachineCodingRound";
+
 
 const LandingPage = () => {
   return (
@@ -10,7 +11,7 @@ const LandingPage = () => {
       <HeroSection />
       <TopicsOverview />
       <TestSection />
-      <ResourcesSection />
+      <MachineCodingRound/>
     </div>
   );
 };

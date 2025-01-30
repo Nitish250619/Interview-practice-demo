@@ -1,0 +1,155 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "title": "Weather App",
+        "description": "A weather application that fetches and displays real-time weather information based on the user’s location or input.",
+        "solution": "Use OpenWeather API to fetch weather data, manage state using useState, and useEffect for API calls. Display data dynamically based on user input."
+      },
+      {
+        "id": 2,
+        "title": "Todo List",
+        "description": "A classic task management app that allows users to create, read, update, and delete (CRUD) tasks.",
+        "solution": "Use useState to manage tasks, create functions for adding, updating, and deleting tasks, and map through the task list to render the UI."
+      },
+      {
+        "id": 3,
+        "title": "Theme Mode",
+        "description": "A simple project to toggle between light and dark themes.",
+        "solution": "Use useContext and useState to manage theme state, store user preferences in localStorage, and apply conditional class names based on the theme."
+      },
+      {
+        "id": 4,
+        "title": "Star Rating",
+        "description": "Create a reusable component for a star-based rating system.",
+        "solution": "Use useState to track the selected rating, use onClick to update the state, and conditionally render filled or outlined stars based on user selection."
+      },
+      {
+        "id": 5,
+        "title": "Snake and Ladder Board",
+        "description": "Implement a snake and ladder game board.",
+        "solution": "Use a grid-based layout, maintain game state in useState, implement logic for dice rolls, player movement, and checking for snakes/ladders."
+      },
+      {
+        "id": 6,
+        "title": "Responsive Layout",
+        "description": "Design a layout that adjusts seamlessly to different screen sizes.",
+        "solution": "Use CSS Flexbox, Grid, and media queries for responsiveness. Use Material-UI or Tailwind for better responsiveness handling."
+      },
+      {
+        "id": 7,
+        "title": "Quiz App",
+        "description": "Create a quiz application where users can take quizzes and receive feedback.",
+        "solution": "Use useState to track selected answers, compare with correct answers, and display the score dynamically."
+      },
+      {
+        "id": 8,
+        "title": "Progress Bar",
+        "description": "Build a dynamic progress bar that visually represents the completion of a task.",
+        "solution": "Use useState to track progress, dynamically update width using inline styles, and animate using CSS transitions or Framer Motion."
+      },
+      {
+        "id": 9,
+        "title": "Pop-Over",
+        "description": "Develop a pop-over component that displays additional information when clicked.",
+        "solution": "Use useState to toggle visibility, position pop-over dynamically, and add an event listener to close it when clicking outside."
+      },
+      {
+        "id": 10,
+        "title": "Password Generator",
+        "description": "A secure random password generator.",
+        "solution": "Use Math.random and predefined character sets to generate a random string, and use useState to store and display the password."
+      },
+      {
+        "id": 11,
+        "title": "Pagination",
+        "description": "Create a pagination component for navigating through content.",
+        "solution": "Use useState to track current page, slice data accordingly, and implement previous/next buttons for navigation."
+      },
+      {
+        "id": 12,
+        "title": "OTP Login",
+        "description": "Implement an OTP-based login authentication system.",
+        "solution": "Generate a random OTP, store it temporarily, and verify user input before allowing authentication."
+      },
+      {
+        "id": 13,
+        "title": "Nested Comments",
+        "description": "Create a system for displaying and managing nested comments.",
+        "solution": "Use recursion to render nested comments, useState for tracking replies, and map through comments to display them hierarchically."
+      },
+      {
+        "id": 14,
+        "title": "Navbar",
+        "description": "Develop a responsive navigation bar with dropdown menus.",
+        "solution": "Use flexbox for layout, state to track dropdown visibility, and conditional rendering for mobile navigation."
+      },
+      {
+        "id": 15,
+        "title": "Modal Component",
+        "description": "Build a reusable modal component for displaying overlays.",
+        "solution": "Use state to control visibility, useEffect for key press handling, and conditionally render modal content."
+      },
+      {
+        "id": 16,
+        "title": "Like Button",
+        "description": "Create a like button with animations and state management.",
+        "solution": "Use useState to toggle like status and Framer Motion for smooth animations."
+      },
+      {
+        "id": 17,
+        "title": "Job Board",
+        "description": "Develop a job board application where users can list and search for jobs.",
+        "solution": "Fetch job data from an API, filter based on user input, and use pagination to display results."
+      },
+      {
+        "id": 18,
+        "title": "Accordion",
+        "description": "Create an accordion component to toggle the visibility of content.",
+        "solution": "Use useState to track the expanded panel and conditionally render content."
+      },
+      {
+        "id": 19,
+        "title": "Calculator",
+        "description": "Build a basic calculator for arithmetic operations.",
+        "solution": "Use useState to store values, implement functions for calculations, and update display dynamically."
+      },
+      {
+        "id": 20,
+        "title": "Carousel",
+        "description": "Implement an image carousel for showcasing multiple images.",
+        "solution": "Use useState for current index tracking, CSS transitions for animations, and buttons for navigation."
+      },
+      {
+        "id": 21,
+        "title": "Countdown Timer",
+        "description": "Create a countdown timer for events.",
+        "solution": "Use useState and setInterval to update time every second, and clear the interval when time reaches zero."
+      },
+      {
+        "id": 22,
+        "title": "Custom Hook",
+        "description": "Develop a custom React hook for reusable logic.",
+        "solution": "Encapsulate logic inside a function that returns state and methods, allowing reuse across components."
+      },
+      {
+        "id": 23,
+        "title": "Drag and Drop Items",
+        "description": "Implement a drag-and-drop feature for items within a list.",
+        "solution": "Use React DnD or HTML5 drag-and-drop API to track and reorder items dynamically."
+      },
+      {
+        "id": 24,
+        "title": "Dropdown Component",
+        "description": "Create a dropdown menu for selecting options.",
+        "solution": "Use useState to toggle dropdown visibility and map through options to render them dynamically."
+      },
+      {
+        "id": 25,
+        "title": "Form Validation",
+        "description": "Build a form with validation and error messages.",
+        "solution": "Use React Hook Form or custom validation logic to manage input fields and display error messages dynamically."
+      }
+    ]
+  }
+  
