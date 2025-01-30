@@ -1,0 +1,780 @@
+{
+  "problem_of_the_day": [
+    {
+      "title": "JavaScript",
+      "questions": [
+        {
+          "question": "What is the difference between Let, Var, and Const?",
+          "answer": "- `var`: Function-scoped, hoisted to the top of its scope.\n- `let`: Block-scoped, not hoisted.\n- `const`: Block-scoped, not hoisted, and cannot be reassigned.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"
+        },
+        {
+          "question": "What is the difference between == and ===?",
+          "answer": "- `==` performs type coercion before comparison.\n- `===` performs a strict comparison without type coercion.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness"
+        },
+        {
+          "question": "What are constructor functions?",
+          "answer": "Constructor functions are used to create objects in JavaScript. They are typically used with the `new` keyword.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor"
+        },
+        {
+          "question": "What is the new keyword and how would you explain it?",
+          "answer": "The `new` keyword is used to create an instance of a user-defined object type or a built-in object type with a constructor function.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new"
+        },
+        {
+          "question": "What is a Higher Order Function?",
+          "answer": "A higher-order function is a function that takes one or more functions as arguments or returns a function as its result.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function"
+        },
+        {
+          "question": "What is a First Class Function?",
+          "answer": "A first-class function is a function that can be treated like any other variable, i.e., passed as an argument, returned from another function, or assigned to a variable.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function"
+        },
+        {
+          "question": "What is an IIFE Function?",
+          "answer": "An Immediately Invoked Function Expression (IIFE) is a function that is executed immediately after it is defined.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/IIFE"
+        },
+        {
+          "question": "Explain Hoisting in JavaScript.",
+          "answer": "Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/Hoisting"
+        },
+        {
+          "question": "Explain Map, Filter, and Reduce Functions.",
+          "answer": "- `map()`: Creates a new array by applying a function to each element.\n- `filter()`: Creates a new array with elements that pass a test.\n- `reduce()`: Reduces the array to a single value by applying a function.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+        },
+        {
+          "question": "How many ways to create an Object in JS?",
+          "answer": "There are several ways to create objects in JavaScript, including object literals, constructor functions, and the `Object.create()` method.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects"
+        },
+        {
+          "question": "What is a Prototype?",
+          "answer": "A prototype is an object from which other objects inherit properties and methods.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain"
+        },
+        {
+          "question": "What is Prototype Inheritance?",
+          "answer": "Prototype inheritance is a mechanism in JavaScript where objects can inherit properties and methods from other objects.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain"
+        },
+        {
+          "question": "What is a Closure and explain lexical scope properly?",
+          "answer": "A closure is a function that retains access to its lexical scope even when the function is executed outside that scope. Lexical scope refers to the scope defined by the function's physical placement in the code.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
+        },
+        {
+          "question": "What is Currying?",
+          "answer": "Currying is a technique in functional programming where a function is transformed into a sequence of functions, each taking a single argument.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/Currying"
+        },
+        {
+          "question": "What is an Arrow Function and how do we use it?",
+          "answer": "An arrow function is a concise way to write functions in JavaScript. It does not have its own `this` context and is always anonymous.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+        },
+        {
+          "question": "What is the Object.freeze() method?",
+          "answer": "The `Object.freeze()` method freezes an object, preventing new properties from being added, existing properties from being removed, and values of existing properties from being changed.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze"
+        },
+        {
+          "question": "Explain Call(), Apply(), and Bind Methods.",
+          "answer": "- `call()`: Calls a function with a given `this` value and arguments provided individually.\n- `apply()`: Calls a function with a given `this` value and arguments provided as an array.\n- `bind()`: Creates a new function with a fixed `this` value.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call"
+        },
+        {
+          "question": "What are Callbacks?",
+          "answer": "A callback is a function passed as an argument to another function and is executed after some operation has been completed.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/Callback_function"
+        },
+        {
+          "question": "What is the Rest Operator and Spread Operator?",
+          "answer": "- Rest operator: Collects multiple elements into an array.\n- Spread operator: Expands an array into individual elements.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax"
+        },
+        {
+          "question": "What are Promises and what is the use of Promises in JavaScript?",
+          "answer": "Promises are objects that represent the eventual completion (or failure) of an asynchronous operation and its resulting value.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+        },
+        {
+          "question": "What do you understand by Asynchronous Programming?",
+          "answer": "Asynchronous programming allows code to run concurrently, enabling tasks to be performed without blocking the main thread.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous"
+        },
+        {
+          "question": "Can you give me some examples of real-world use cases for asynchronous programming in JavaScript?",
+          "answer": "Examples include fetching data from an API, reading files, and handling user input without blocking the UI.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous"
+        },
+        {
+          "question": "How can you add a callback function to an asynchronous call in JavaScript?",
+          "answer": "You can pass a callback function as an argument to an asynchronous function, which will be executed once the asynchronous operation is complete.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/Callback_function"
+        },
+        {
+          "question": "What is the difference between Synchronous and Asynchronous Programming?",
+          "answer": "- Synchronous: Code executes sequentially, blocking further execution until the current operation is complete.\n- Asynchronous: Code executes concurrently, allowing other operations to proceed without waiting.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous"
+        },
+        {
+          "question": "What is your understanding of the Event Loop concept in JavaScript?",
+          "answer": "The event loop is a mechanism that allows JavaScript to perform non-blocking I/O operations by continuously checking the call stack and processing tasks from the callback queue.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop"
+        },
+        {
+          "question": "Can you explain what the 'this' keyword does in JavaScript?",
+          "answer": "The 'this' keyword refers to the object it belongs to. Its value depends on how a function is called.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"
+        },
+        {
+          "question": "What are Event Emitters in Node.js?",
+          "answer": "Event emitters are objects in Node.js that can emit named events and allow functions (listeners) to be attached to these events.",
+          "practice_link": "https://nodejs.org/api/events.html"
+        },
+        {
+          "question": "Can you explain how you would deal with a memory leak in JavaScript?",
+          "answer": "To deal with memory leaks, identify and fix issues like global variables, forgotten timers, and detached DOM elements.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management"
+        },
+        {
+          "question": "When should I use Callbacks, Promises, or Async/Await methods in my code?",
+          "answer": "- Callbacks: Simple, single asynchronous operations.\n- Promises: Multiple asynchronous operations with better error handling.\n- Async/Await: Cleaner syntax for handling asynchronous code.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous"
+        },
+        {
+          "question": "Why are Callbacks not recommended for most applications?",
+          "answer": "Callbacks can lead to callback hell, making code difficult to read and maintain. Promises and async/await provide better alternatives.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous"
+        },
+        {
+          "question": "Can you explain what the onerror() method does in JavaScript?",
+          "answer": "The `onerror()` method is used to handle errors that occur during the execution of JavaScript code.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onerror"
+        },
+        {
+          "question": "What do you understand about Generators in JavaScript?",
+          "answer": "Generators are functions that can be paused and resumed. They use the `function*` syntax and the `yield` keyword.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*"
+        },
+        {
+          "question": "Do all browsers support ES6 Promises? If not, then which ones do not work well with it?",
+          "answer": "Most modern browsers support ES6 Promises, but older browsers like Internet Explorer do not.",
+          "practice_link": "https://caniuse.com/promises"
+        },
+        {
+          "question": "What’s the best way to implement Singleton patterns using async functions in JavaScript?",
+          "answer": "You can implement a Singleton pattern using async functions by ensuring only one instance of the class is created and returned.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/Singleton"
+        },
+        {
+          "question": "Can you explain what a Closure is and why they are important when dealing with asynchronous code?",
+          "answer": "A closure is a function that retains access to its lexical scope. They are important in asynchronous code for maintaining state across asynchronous operations.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
+        },
+        {
+          "question": "Why do we need to use Arrow Functions instead of normal functions with async calls in JavaScript?",
+          "answer": "Arrow functions do not have their own `this` context, making them ideal for use with async calls where the context needs to be preserved.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+        },
+        {
+          "question": "How can you avoid Callback Hell while writing asynchronous code in JavaScript?",
+          "answer": "You can avoid callback hell by using Promises, async/await, or modularizing your code.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous"
+        },
+        {
+          "question": "What is your opinion on batching requests to APIs?",
+          "answer": "Batching requests can improve performance by reducing the number of HTTP requests, but it may complicate error handling.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+        },
+        {
+          "question": "What is the purpose of setImmediate() in JavaScript?",
+          "answer": "The `setImmediate()` method is used to execute a function after the current event loop cycle completes.",
+          "practice_link": "https://nodejs.org/api/timers.html#timers_setimmediate_callback_args"
+        },
+        {
+          "question": "What is Memoization?",
+          "answer": "Memoization is an optimization technique that stores the results of expensive function calls and returns the cached result when the same inputs occur again.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/Memoization"
+        },
+        {
+          "question": "What is a Temporal Dead Zone?",
+          "answer": "The temporal dead zone is the period between entering scope and being declared where variables are not accessible.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz"
+        },
+        {
+          "question": "What is Recursion in Programming Language?",
+          "answer": "Recursion is a technique where a function calls itself to solve a problem by breaking it down into smaller subproblems.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/Recursion"
+        },
+        {
+          "question": "What is Scope and Scope Chain? Also, define the types of scope.",
+          "answer": "Scope refers to the visibility of variables. The scope chain is the hierarchy of scopes. Types of scope include global, function, and block scope.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/Scope"
+        },
+        {
+          "question": "What is the difference between Splice and Slice?",
+          "answer": "- `splice()`: Changes the contents of an array by removing or replacing existing elements and/or adding new elements.\n- `slice()`: Returns a shallow copy of a portion of an array into a new array.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
+        },
+        {
+          "question": "What is Client-Side and Server-Side Rendering?",
+          "answer": "- Client-side rendering: The browser renders the page using JavaScript.\n- Server-side rendering: The server renders the page and sends it to the browser.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Glossary/Client-side_rendering"
+        },
+        {
+          "question": "Mention some advantages of JavaScript.",
+          "answer": "Advantages include versatility, ease of use, and the ability to create dynamic and interactive web pages.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "question": "What is the difference between a Class and an Object in JavaScript?",
+          "answer": "A class is a blueprint for creating objects, while an object is an instance of a class.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        },
+        {
+          "question": "Why are Classes important in OOP? How do they help developers write better code?",
+          "answer": "Classes provide a clear structure for organizing code, making it easier to manage and reuse.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        },
+        {
+          "question": "Is JavaScript a Class-Based OOP Language?",
+          "answer": "JavaScript is prototype-based but supports class-based syntax through ES6 classes.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        },
+        {
+          "question": "What is the purpose of the 'new' keyword in JavaScript?",
+          "answer": "The `new` keyword is used to create an instance of a user-defined object type or a built-in object type with a constructor function.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new"
+        },
+        {
+          "question": "Is it possible for a Child Class to call a Parent Class’s Constructor in JavaScript? If yes, how?",
+          "answer": "Yes, using the `super()` keyword in the child class constructor.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super"
+        },
+        {
+          "question": "What is the difference between Overloading and Overriding?",
+          "answer": "- Overloading: Multiple methods with the same name but different parameters.\n- Overriding: A child class provides a specific implementation of a method already defined in its parent class.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        },
+        {
+          "question": "What is Method Overriding?",
+          "answer": "Method overriding occurs when a child class provides a specific implementation of a method already defined in its parent class.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        },
+        {
+          "question": "What is Constructor Overriding?",
+          "answer": "Constructor overriding occurs when a child class defines its own constructor, effectively replacing the parent class's constructor.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        },
+        {
+          "question": "What is the difference between a Constructor and a Class in JavaScript?",
+          "answer": "A constructor is a special method used to initialize objects, while a class is a blueprint for creating objects.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        },
+        {
+          "question": "Define the Super Keyword.",
+          "answer": "The `super` keyword is used to call the constructor of a parent class or to access its properties and methods.",
+          "practice_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super"
+        }
+      ]
+    },
+    {
+      "title": "React",
+      "questions": [
+        {
+          "question": "Explain the difference between class components and functional components in React.",
+          "answer": "- Class components use ES6 classes and have lifecycle methods.\n- Functional components are simpler and use hooks for state and lifecycle features.",
+          "practice_link": "https://reactjs.org/docs/components-and-props.html"
+        },
+        {
+          "question": "What is the Virtual DOM, and how does it improve performance in React?",
+          "answer": "The Virtual DOM is a lightweight copy of the real DOM. React uses it to minimize direct DOM manipulations, improving performance by batching updates.",
+          "practice_link": "https://reactjs.org/docs/faq-internals.html"
+        },
+        {
+          "question": "How does React handle state management in functional components using hooks?",
+          "answer": "React uses the `useState` hook to manage state in functional components. Example:\n\n```javascript\nconst [count, setCount] = useState(0);\n```",
+          "practice_link": "https://reactjs.org/docs/hooks-state.html"
+        },
+        {
+          "question": "Explain the concept of React context and when it should be used.",
+          "answer": "React Context provides a way to pass data through the component tree without manually passing props. It is useful for global data like themes or user authentication.",
+          "practice_link": "https://reactjs.org/docs/context.html"
+        },
+        {
+          "question": "What are React hooks? Provide examples of 'useState', 'useEffect', and 'useContext'.",
+          "answer": "Hooks are functions that let you use state and other React features in functional components. Examples:\n\n```javascript\nconst [state, setState] = useState(initialState);\nuseEffect(() => { /* side effects */ }, [dependencies]);\nconst value = useContext(MyContext);\n```",
+          "practice_link": "https://reactjs.org/docs/hooks-intro.html"
+        },
+        {
+          "question": "How does React Router work, and how can you implement dynamic routing?",
+          "answer": "React Router is a library for routing in React. Dynamic routing can be implemented using route parameters. Example:\n\n```javascript\n<Route path='/users/:id' component={User} />\n```",
+          "practice_link": "https://reactrouter.com/"
+        },
+        {
+          "question": "What is the purpose of keys in React lists, and why are they important?",
+          "answer": "Keys help React identify which items have changed, are added, or are removed. They improve performance and prevent bugs.",
+          "practice_link": "https://reactjs.org/docs/lists-and-keys.html"
+        },
+        {
+          "question": "Explain the concept of higher-order components (HOCs) in React and provide an example.",
+          "answer": "A HOC is a function that takes a component and returns a new component. Example:\n\n```javascript\nconst withLogging = (WrappedComponent) => {\n  return (props) => {\n    console.log('Rendering:', WrappedComponent.name);\n    return <WrappedComponent {...props} />;\n  };\n};\n```",
+          "practice_link": "https://reactjs.org/docs/higher-order-components.html"
+        },
+        {
+          "question": "How can you optimize performance in a React application?",
+          "answer": "Use techniques like memoization, lazy loading, and avoiding unnecessary re-renders with `React.memo` or `useMemo`.",
+          "practice_link": "https://reactjs.org/docs/optimizing-performance.html"
+        },
+        {
+          "question": "What is Redux, and how does it integrate with React for state management?",
+          "answer": "Redux is a state management library that uses a single global store. It integrates with React via the `react-redux` library.",
+          "practice_link": "https://redux.js.org/"
+        },
+        {
+          "question": "What is the difference between Virtual DOM and Real DOM? And what is React Fiber and Reconciliation?",
+          "answer": "The Real DOM is a slow process because it requires frequent updates. The Virtual DOM is faster as React makes changes to a virtual copy and then applies them to the real DOM. React Fiber is the reimplementation of React's core algorithm to make rendering more flexible and responsive. Reconciliation is the process of comparing the old Virtual DOM with the new Virtual DOM to determine what changes need to be applied.",
+          "practice_link": "https://reactjs.org/docs/reconciliation.html"
+        },
+        {
+          "question": "What is React?",
+          "answer": "React is a JavaScript library used for building user interfaces. It enables developers to create reusable UI components and manage application state efficiently.",
+          "practice_link": "https://reactjs.org/"
+        },
+        {
+          "question": "What is the meaning of Virtual DOM?",
+          "answer": "The Virtual DOM is a lightweight representation of the actual DOM in memory. It allows React to update only the parts of the UI that have changed, which improves performance.",
+          "practice_link": "https://reactjs.org/docs/faq-internals.html"
+        },
+        {
+          "question": "What are some of the important features of React?",
+          "answer": "Some important features of React include JSX, component-based architecture, one-way data flow, virtual DOM, hooks, and efficient state management.",
+          "practice_link": "https://reactjs.org/docs/features.html"
+        },
+        {
+          "question": "What is the meaning of JSX?",
+          "answer": "JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows you to write HTML-like code inside your JavaScript files.",
+          "practice_link": "https://reactjs.org/docs/jsx-in-depth.html"
+        },
+        {
+          "question": "Can browsers read a JSX file?",
+          "answer": "No, browsers cannot directly read JSX files. JSX needs to be compiled into JavaScript using a tool like Babel before it can be executed by the browser.",
+          "practice_link": "https://reactjs.org/docs/jsx-in-depth.html"
+        },
+        {
+          "question": "Why is React widely used today?",
+          "answer": "React is widely used because of its component-based architecture, performance optimizations, ease of use, and large community support. It also allows developers to build fast, dynamic web applications.",
+          "practice_link": "https://reactjs.org/"
+        },
+        {
+          "question": "Are there any disadvantages to using React?",
+          "answer": "Some disadvantages of React include its steep learning curve, especially when dealing with advanced concepts like hooks and state management, as well as the large size of the React library.",
+          "practice_link": "https://reactjs.org/"
+        },
+        {
+          "question": "Differentiate between Angular and React.",
+          "answer": "Angular is a complete framework that provides a wide range of built-in features, while React is a library focused on building user interfaces. React is more flexible, and Angular provides more built-in functionalities.",
+          "practice_link": "https://reactjs.org/"
+        },
+        {
+          "question": "What is the meaning of the component-based architecture of React?",
+          "answer": "In React, the component-based architecture means that applications are built using self-contained, reusable components that manage their own state and UI.",
+          "practice_link": "https://reactjs.org/docs/components-and-props.html"
+        },
+        {
+          "question": "How does rendering work in React?",
+          "answer": "React uses a virtual DOM to optimize the rendering process. When the state or props of a component change, React updates the virtual DOM first and then compares it with the actual DOM to update only the changed parts.",
+          "practice_link": "https://reactjs.org/docs/rendering-elements.html"
+        },
+        {
+          "question": "What are states in React?",
+          "answer": "State in React refers to data that can change over time and affect how a component behaves. It can be managed using the `useState` hook in functional components.",
+          "practice_link": "https://reactjs.org/docs/state-and-lifecycle.html"
+        },
+        {
+          "question": "What are props in React?",
+          "answer": "Props are short for 'properties' and are used to pass data from a parent component to a child component in React.",
+          "practice_link": "https://reactjs.org/docs/components-and-props.html"
+        },
+        {
+          "question": "What is the use of an arrow function in React?",
+          "answer": "Arrow functions are often used in React for binding event handlers and preserving the correct value of `this` inside the function.",
+          "practice_link": "https://reactjs.org/docs/jsx-in-depth.html"
+        },
+        {
+          "question": "What is a higher-order component in React?",
+          "answer": "A higher-order component (HOC) is a function that takes a component and returns a new component, typically used for code reuse and logic sharing.",
+          "practice_link": "https://reactjs.org/docs/higher-order-components.html"
+        },
+        {
+          "question": "What is the meaning of create-react-app in React?",
+          "answer": "Create React App is an officially supported tool that helps developers set up a React application with zero configuration. It provides a pre-configured build system.",
+          "practice_link": "https://reactjs.org/docs/create-a-new-react-app.html"
+        },
+        {
+          "question": "What are some of the advantages of using create-react-app in React?",
+          "answer": "Create React App simplifies the setup process by providing a preconfigured environment with features like hot-reloading, a build system, and support for modern JavaScript features.",
+          "practice_link": "https://reactjs.org/docs/create-a-new-react-app.html"
+        },
+        {
+          "question": "What is the meaning of Redux?",
+          "answer": "Redux is a state management library that helps manage the state of an application using a single global store, making it easier to debug and track changes in state.",
+          "practice_link": "https://redux.js.org/"
+        },
+        {
+          "question": "What is the difference between Props and States?",
+          "answer": "Props are used to pass data from parent to child components and are immutable. States are used to store and manage data within a component and can be changed.",
+          "practice_link": "https://reactjs.org/docs/components-and-props.html"
+        },
+        {
+          "question": "What are the three phases of a component life cycle in React?",
+          "answer": "The three phases are: mounting (when the component is created), updating (when the component's state or props change), and unmounting (when the component is removed from the DOM).",
+          "practice_link": "https://reactjs.org/docs/state-and-lifecycle.html"
+        },
+        {
+          "question": "What are events in React?",
+          "answer": "Events in React are functions that handle user interactions like clicks, typing, and mouse movements. React normalizes events across browsers.",
+          "practice_link": "https://reactjs.org/docs/events.html"
+        },
+        {
+          "question": "How are events created in React?",
+          "answer": "Events in React are created by attaching event handlers like `onClick`, `onChange`, or `onSubmit` to components.",
+          "practice_link": "https://reactjs.org/docs/events.html"
+        },
+        {
+          "question": "How is routing in React different from Conventional routing?",
+          "answer": "In React, routing is handled by React Router, which uses JavaScript to dynamically update the UI without refreshing the page. Conventional routing reloads the entire page.",
+          "practice_link": "https://reactrouter.com/"
+        },
+        {
+          "question": "Differentiate between Flux and Redux in React.",
+          "answer": "Flux is an architecture for unidirectional data flow in React, while Redux is a state management library that builds on Flux with a central store, making it more predictable.",
+          "practice_link": "https://redux.js.org/"
+        },
+        {
+          "question": "Can AJAX be used with React?",
+          "answer": "Yes, React can use AJAX for making HTTP requests, typically using `fetch()` or libraries like Axios to fetch data asynchronously.",
+          "practice_link": "https://reactjs.org/docs/faq-ajax.html"
+        },
+        {
+          "question": "What is the meaning of synthetic events in React?",
+          "answer": "Synthetic events in React are wrapped around the browser's native events to normalize them across different browsers. React's event system provides a consistent API.",
+          "practice_link": "https://reactjs.org/docs/events.html"
+        },
+        {
+          "question": "What are stateful components in React?",
+          "answer": "Stateful components are components that manage their own state using the `useState` hook or class-based state management.",
+          "practice_link": "https://reactjs.org/docs/state-and-lifecycle.html"
+        },
+        {
+          "question": "What are refs in React?",
+          "answer": "Refs provide a way to access the DOM elements directly within a component, allowing you to interact with them outside of React's state-driven rendering.",
+          "practice_link": "https://reactjs.org/docs/refs-and-the-dom.html"
+        },
+        {
+          "question": "What are controlled components in React?",
+          "answer": "Controlled components are components where the React state controls the form elements like input, textarea, and select. The component's state drives their value.",
+          "practice_link": "https://reactjs.org/docs/forms.html"
+        },
+        {
+          "question": "Why is a router required in React?",
+          "answer": "A router is required in React to navigate between different views or pages in a single-page application, enabling dynamic updates without page reloads.",
+          "practice_link": "https://reactrouter.com/"
+        },
+        {
+          "question": "What are the components of Redux in React?",
+          "answer": "The key components of Redux include actions, reducers, and the store, which help manage the state of an application.",
+          "practice_link": "https://redux.js.org/"
+        },
+        {
+          "question": "What are the advantages of using Redux?",
+          "answer": "The advantages of using Redux include centralized state management, predictable state, and easier debugging and testing.",
+          "practice_link": "https://redux.js.org/"
+        },
+        {
+          "question": "What are the disadvantages of using MVC in React?",
+          "answer": "Using MVC with React can lead to an overcomplicated design since React already uses a component-based architecture. It might also introduce unnecessary state management complexity.",
+          "practice_link": "https://reactjs.org/"
+        },
+        {
+          "question": "What are pure components in React?",
+          "answer": "Pure components in React are components that implement `shouldComponentUpdate` with a shallow prop and state comparison, preventing unnecessary re-renders.",
+          "practice_link": "https://reactjs.org/docs/purecomponents.html"
+        },
+        {
+          "question": "What are higher-order components (HOCs) used for?",
+          "answer": "HOCs are used to add additional functionality to components by wrapping them, allowing you to share logic across components.",
+          "practice_link": "https://reactjs.org/docs/higher-order-components.html"
+        },
+        {
+          "question": "What are the keys in React?",
+          "answer": "Keys in React are used to uniquely identify elements in a list, helping React efficiently update the UI by comparing the old and new Virtual DOM.",
+          "practice_link": "https://reactjs.org/docs/lists-and-keys.html"
+        },
+        {
+          "question": "Differentiate between a controlled component and an uncontrolled component in React.",
+          "answer": "A controlled component is one where the form data is managed by React state. An uncontrolled component manages its own state internally using refs.",
+          "practice_link": "https://reactjs.org/docs/forms.html"
+        },
+        {
+          "question": "How can you tell React to build in production mode?",
+          "answer": "You can tell React to build in production mode by setting the `NODE_ENV` environment variable to 'production' during the build process.",
+          "practice_link": "https://reactjs.org/docs/optimizing-performance.html"
+        },
+        {
+          "question": "What is the difference between cloneElement and createElement in React?",
+          "answer": "`cloneElement` creates a new element using an existing one with modified props, while `createElement` is used to create React elements from a component or tag.",
+          "practice_link": "https://reactjs.org/docs/react-api.html"
+        },
+        {
+          "question": "What is the use of the second argument that is passed to setState? Is it optional?",
+          "answer": "The second argument of `setState` is a callback that gets executed after the state is updated. It is optional and can be used for tasks like side effects after state changes.",
+          "practice_link": "https://reactjs.org/docs/react-component.html"
+        },
+        {
+          "question": "Is there a way to avoid the requirement of binding when using React?",
+          "answer": "You can avoid binding by using arrow functions for event handlers, which automatically bind `this` to the component.",
+          "practice_link": "https://reactjs.org/docs/handling-events.html"
+        },
+        {
+          "question": "What is the StrictMode component used in React?",
+          "answer": "StrictMode is a tool for highlighting potential problems in an application. It checks for deprecated methods, unsafe lifecycles, and other issues.",
+          "practice_link": "https://reactjs.org/docs/strict-mode.html"
+        },
+        {
+          "question": "What would you do if your React application is rendering slowly?",
+          "answer": "You can optimize performance by using `React.memo`, lazy loading components, and optimizing the re-render process with hooks like `useMemo` and `useCallback`.",
+          "practice_link": "https://reactjs.org/docs/optimizing-performance.html"
+        },
+        {
+          "question": "Can you conditionally add attributes to components in React?",
+          "answer": "Yes, you can conditionally add attributes to components using JavaScript expressions inside JSX. Example:\n\n```jsx\n<button disabled={isDisabled}>Click</button>\n```",
+          "practice_link": "https://reactjs.org/docs/conditional-rendering.html"
+        },
+        {
+          "question": "Why are props passed to the super() function in React?",
+          "answer": "Props are passed to `super()` to initialize the parent class (React.Component) with the component’s props, allowing access to `this.props` in the component.",
+          "practice_link": "https://reactjs.org/docs/react-component.html"
+        },
+        {
+          "question": "What is the difference between using getInitialState and constructors in React?",
+          "answer": "The `getInitialState` method is used in older versions of React (pre-ES6), while constructors are used in modern React components for initializing state.",
+          "practice_link": "https://reactjs.org/docs/react-component.html"
+        },
+        {
+          "question": "What are the predefined prop types present in React?",
+          "answer": "React has predefined prop types like `PropTypes.string`, `PropTypes.number`, `PropTypes.bool`, `PropTypes.object`, etc., to validate the type of props passed to components.",
+          "practice_link": "https://reactjs.org/docs/typechecking-with-proptypes.html"
+        },
+        {
+          "question": "What is React Fiber?",
+          "answer": "React Fiber is the new reconciliation algorithm in React, allowing React to perform incremental rendering for better UI responsiveness and smoother updates.",
+          "practice_link": "https://reactjs.org/docs/introducing-new-renderer.html"
+        },
+        {
+          "question": "What are Hooks in React?",
+          "answer": "Hooks are functions that allow you to use state and other React features in functional components. Examples include `useState`, `useEffect`, and `useContext`.",
+          "practice_link": "https://reactjs.org/docs/hooks-intro.html"
+        }
+      ]
+    },
+    {
+      "title": "TypeScript",
+      "questions": [
+        {
+          "question": "What are TypeScript generics, and how can they be used to create reusable components?",
+          "answer": "Generics allow you to create reusable components that work with multiple types. Example:\n\n```typescript\nfunction identity<T>(arg: T): T {\n  return arg;\n}\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/generics.html"
+        },
+        {
+          "question": "Explain the difference between 'interface' and 'type' in TypeScript.",
+          "answer": "- `interface`: Can be extended and merged.\n- `type`: Can represent primitives, unions, and intersections.",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/advanced-types.html"
+        },
+        {
+          "question": "How does TypeScript handle type inference, and when should you explicitly define types?",
+          "answer": "TypeScript infers types based on assigned values. Explicit types are useful for function parameters and return types.",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/type-inference.html"
+        },
+        {
+          "question": "What are TypeScript decorators, and how are they used in Angular or other frameworks?",
+          "answer": "Decorators are functions that modify classes, methods, or properties. Example:\n\n```typescript\n@Component({ selector: 'app-root', template: 'Hello' })\nclass AppComponent {}\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/decorators.html"
+        },
+        {
+          "question": "Explain the concept of union types and intersection types in TypeScript.",
+          "answer": "- Union types: `string | number`\n- Intersection types: `A & B`",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html"
+        },
+        {
+          "question": "How does TypeScript support OOP concepts like inheritance and polymorphism?",
+          "answer": "TypeScript supports OOP through classes, inheritance, and interfaces. Example:\n\n```typescript\nclass Animal {\n  move() {}\n}\nclass Dog extends Animal {\n  bark() {}\n}\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/classes.html"
+        },
+        {
+          "question": "What are TypeScript utility types, and provide examples of 'Partial', 'Pick', and 'Omit'.",
+          "answer": "Utility types are built-in types for common transformations. Examples:\n\n```typescript\nPartial<T>, Pick<T, K>, Omit<T, K>\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/utility-types.html"
+        },
+        {
+          "question": "How can you use TypeScript with React to enforce type safety in props and state?",
+          "answer": "Use interfaces or types for props and state. Example:\n\n```typescript\ninterface Props {\n  name: string;\n}\nconst MyComponent: React.FC<Props> = ({ name }) => <div>{name}</div>;\n```",
+          "practice_link": "https://react-typescript-cheatsheet.netlify.app/"
+        },
+        {
+          "question": "Explain the concept of type guards in TypeScript and how they improve type safety.",
+          "answer": "Type guards are expressions that perform runtime checks to ensure a variable is of a specific type. Example:\n\n```typescript\nif (typeof x === 'string') {\n  // x is a string\n}\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-guards-and-differentiating-types"
+        },
+        {
+          "question": "What are TypeScript modules, and how do they differ from JavaScript modules?",
+          "answer": "TypeScript modules are similar to JavaScript modules but support type checking and declaration files.",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/modules.html"
+        },
+        {
+          "question": "What is the difference between `any` and `unknown` types in TypeScript?",
+          "answer": "`any`: Disables type checking, allowing any value. `unknown`: Requires type assertion before performing operations.",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/basic-types.html#unknown"
+        },
+        {
+          "question": "What are tuple types in TypeScript?",
+          "answer": "Tuples allow you to define arrays with a fixed number of elements of different types. Example:\n\n```typescript\nlet person: [string, number] = ['Alice', 30];\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/basic-types.html#tuple"
+        },
+        {
+          "question": "Explain the concept of type alias in TypeScript.",
+          "answer": "A type alias creates a new name for a type, allowing you to define complex types. Example:\n\n```typescript\ntype Point = { x: number; y: number; }\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases"
+        },
+        {
+          "question": "How do you handle async/await in TypeScript?",
+          "answer": "Async functions return a promise, and you can use `await` inside them to wait for a promise to resolve. Example:\n\n```typescript\nasync function fetchData() {\n  let response = await fetch('url');\n  let data = await response.json();\n}\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/async-await.html"
+        },
+        {
+          "question": "What is the purpose of `never` type in TypeScript?",
+          "answer": "The `never` type represents values that never occur, such as functions that always throw errors or infinite loops.",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/basic-types.html#never"
+        },
+        {
+          "question": "Explain the difference between `void` and `never` in TypeScript.",
+          "answer": "`void` indicates that a function does not return a value, while `never` indicates that a function never completes its execution.",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/basic-types.html#void"
+        },
+        {
+          "question": "How do you define default parameters in TypeScript functions?",
+          "answer": "You can define default parameters in TypeScript by assigning a value to them in the function signature. Example:\n\n```typescript\nfunction greet(name: string = 'Guest') {\n  return `Hello, ${name}`;\n}\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/functions.html#optional-and-default-parameters"
+        },
+        {
+          "question": "What is the purpose of `as` keyword in TypeScript?",
+          "answer": "`as` is used for type assertion, telling the compiler to treat a value as a specific type. Example:\n\n```typescript\nlet value: any = 'Hello';\nlet length = (value as string).length;\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/basic-types.html#type-assertions"
+        },
+        {
+          "question": "How can you restrict the values of a variable to a specific set of values in TypeScript?",
+          "answer": "You can use a union type to restrict the values. Example:\n\n```typescript\ntype Direction = 'up' | 'down' | 'left' | 'right';\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/advanced-types.html#literal-types"
+        },
+        {
+          "question": "What is a mapped type in TypeScript?",
+          "answer": "Mapped types allow you to create a new type by transforming properties of an existing type. Example:\n\n```typescript\ntype ReadOnly<T> = {\n  readonly [P in keyof T]: T[P];\n}\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/advanced-types.html#mapped-types"
+        },
+        {
+          "question": "Explain `keyof` operator in TypeScript.",
+          "answer": "`keyof` returns a type that represents the keys of a given type. Example:\n\n```typescript\ntype Person = { name: string; age: number; }\ntype PersonKeys = keyof Person; // 'name' | 'age'\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/advanced-types.html#keyof-type-operator"
+        },
+        {
+          "question": "What is the difference between `interface` and `type` when defining function signatures?",
+          "answer": "`interface` can extend other interfaces, while `type` can represent more complex combinations like unions and intersections.",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/interfaces.html"
+        },
+        {
+          "question": "What are declaration files in TypeScript?",
+          "answer": "Declaration files provide type information for JavaScript libraries, helping TypeScript understand the types of variables, functions, and objects in the library.",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html"
+        },
+        {
+          "question": "How do you use TypeScript with Node.js?",
+          "answer": "You can use TypeScript with Node.js by installing the TypeScript package and setting up a tsconfig.json file. Example:\n\n```bash\nnpm install -g typescript\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html"
+        },
+        {
+          "question": "What is the use of `declare` keyword in TypeScript?",
+          "answer": "`declare` is used to tell TypeScript that a variable, function, or class exists, but its value will be provided elsewhere, usually in a separate JavaScript file.",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html"
+        },
+        {
+          "question": "What are conditional types in TypeScript?",
+          "answer": "Conditional types allow you to define types based on a condition. Example:\n\n```typescript\ntype IsString<T> = T extends string ? 'Yes' : 'No';\n```",
+          "practice_link": "https://www.typescriptlang.org/docs/handbook/advanced-types.html#conditional-types"
+        }
+      ]
+    },
+    
+    {
+      "title": "DSA",
+      "questions": [
+        {
+          "question": "Explain the time complexity of a binary search algorithm and how it works.",
+          "answer": "Binary search has a time complexity of O(log n). It works by repeatedly dividing the search interval in half.",
+          "practice_link": "https://www.geeksforgeeks.org/binary-search/"
+        },
+        {
+          "question": "What is a hash table, and how does it handle collisions?",
+          "answer": "A hash table is a data structure that maps keys to values. Collisions are handled using techniques like chaining or open addressing.",
+          "practice_link": "https://www.geeksforgeeks.org/hashing-data-structure/"
+        },
+        {
+          "question": "Explain the difference between BFS and DFS in graph traversal.",
+          "answer": "- BFS: Explores nodes level by level.\n- DFS: Explores nodes as deep as possible before backtracking.",
+          "practice_link": "https://www.geeksforgeeks.org/difference-between-bfs-and-dfs/"
+        },
+        {
+          "question": "How does the quicksort algorithm work, and what is its average time complexity?",
+          "answer": "Quicksort works by selecting a pivot and partitioning the array into two subarrays. Its average time complexity is O(n log n).",
+          "practice_link": "https://www.geeksforgeeks.org/quick-sort/"
+        },
+        {
+          "question": "What is a dynamic programming approach, and how does it solve problems like the knapsack problem?",
+          "answer": "Dynamic programming breaks problems into smaller subproblems and stores their solutions to avoid redundant calculations.",
+          "practice_link": "https://www.geeksforgeeks.org/dynamic-programming/"
+        },
+        {
+          "question": "Explain the concept of a binary tree and how it differs from a binary search tree.",
+          "answer": "A binary tree has at most two children per node. A binary search tree is a binary tree where the left child is smaller and the right child is larger than the parent.",
+          "practice_link": "https://www.geeksforgeeks.org/binary-tree-data-structure/"
+        },
+        {
+          "question": "What is the difference between a stack and a queue? Provide real-world examples of their use.",
+          "answer": "- Stack: LIFO (Last In, First Out). Example: Browser history.\n- Queue: FIFO (First In, First Out). Example: Printer queue.",
+          "practice_link": "https://www.geeksforgeeks.org/stack-data-structure/"
+        },
+        {
+          "question": "How does the Dijkstra algorithm work, and what is its time complexity?",
+          "answer": "Dijkstra's algorithm finds the shortest path in a graph. Its time complexity is O(V^2) with an adjacency matrix or O(E + V log V) with a priority queue.",
+          "practice_link": "https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/"
+        },
+        {
+          "question": "Explain the concept of memoization in dynamic programming and provide an example.",
+          "answer": "Memoization stores the results of expensive function calls to avoid redundant calculations. Example: Fibonacci sequence.",
+          "practice_link": "https://www.geeksforgeeks.org/memoization-1d-2d-and-3d/"
+        },
+        {
+          "question": "What is a trie data structure, and how is it used in autocomplete systems?",
+          "answer": "A trie is a tree-like data structure used for storing strings. It is efficient for autocomplete systems due to its prefix-based search.",
+          "practice_link": "https://www.geeksforgeeks.org/trie-insert-and-search/"
+        }
+      ]
+    }
+  ]
+}
